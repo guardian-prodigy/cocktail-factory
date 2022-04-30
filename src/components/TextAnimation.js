@@ -6,11 +6,10 @@ import ".././index.css";
 
 function AnimatedText() {
   return (
-    <div className="AnimatedText">
+    <span className="AnimatedText">
       <Typewriter
         onInit={(typewriter) => {
           typewriter
-
             .typeString("Content Creator")
             .pauseFor(1000)
             .deleteAll()
@@ -21,7 +20,7 @@ function AnimatedText() {
             .start();
         }}
       />
-    </div>
+    </span>
   );
 }
 

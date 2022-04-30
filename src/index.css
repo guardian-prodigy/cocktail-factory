@@ -423,6 +423,7 @@ Cocktail
   .FaBars {
     color: var(--primaryColor);
     font-size: 25px;
+    cursor: pointer;
   }
 }
 @media screen and (min-width: 469px) {
@@ -440,17 +441,20 @@ Cocktail
   background-color: var(--primaryColor);
   transition: all 0.5s ease-in;
   display: grid;
-  place-content: center;
+  align-items: center;
 }
 .faBarsActive {
   height: 5rem;
   opacity: 1;
 }
 .nav-links-dropdown li {
-  background: var(--primaryLightColor);
-  padding: 0.2rem;
-  width: 90vw;
-  border-radius: 20%;
   margin: 0.2rem auto;
   text-align: center;
+}
+.navigationalLinks {
+  background: var(--primaryLightColor);
+  padding: 0.2rem;
+  display: inline-block;
+  width: 95vw;
+  border-radius: 20%;
 }

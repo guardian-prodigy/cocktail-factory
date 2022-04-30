@@ -10,6 +10,9 @@ const Navbar = () => {
       console.log("true");
     }
   };
+  const navigationalLinks = () => {
+    setToggle(!toggle)
+  }
   return (
     <>
       <nav className="navbar">
@@ -30,10 +33,10 @@ const Navbar = () => {
       </nav>
       <ul className={toggle ? "nav-links-dropdown faBarsActive" : "nav-links-dropdown"}>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" onClick={navigationalLinks} className="navigationalLinks">Home</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about" onClick={navigationalLinks} className="navigationalLinks">About</Link>
         </li>
       </ul>
     </>
